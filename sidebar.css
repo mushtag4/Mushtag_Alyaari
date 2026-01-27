@@ -1,0 +1,342 @@
+﻿/* ========================================
+   Professional Sidebar Styles (Fixed Right & Hidden)
+   ======================================== */
+
+/* 1. Sidebar Container */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+        /* ALWAYS Right */
+        left: auto;
+        /* Never Left */
+    width: 280px;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-left: 1px solid rgba(0, 204, 255, 0.2);
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.5);
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    overflow-y: auto;
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform: translateX(100%);
+        /* Hidden by default */
+}
+
+.sidebar.active {
+    transform: translateX(0);
+}
+
+/* 2. Scrollbar */
+.sidebar::-webkit-scrollbar {
+    width: 5px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.05);
+}
+.sidebar::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, var(--neon-pink), var(--neon-blue));
+    border-radius: 10px;
+}
+
+/* 3. Profile (Smaller & Cleaner) */
+.sidebar-profile {
+    display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 15px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        margin-bottom: 15px;
+        background: rgba(255, 255, 255, 0.02);
+}
+
+.profile-image-wrapper {
+    position: relative;
+    width: 70px;
+        height: 70px;
+        margin: 15px 0 10px;
+}
+
+.sidebar-profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid rgba(0, 204, 255, 0.5);
+        box-shadow: 0 0 15px rgba(0, 204, 255, 0.3);
+        transition: all 0.3s ease;
+}
+
+.sidebar-profile-img:hover {
+    transform: scale(1.05);
+        box-shadow: 0 0 25px rgba(0, 204, 255, 0.5);
+}
+
+.profile-status {
+    position: absolute;
+    bottom: 2px;
+        right: 2px;
+        width: 12px;
+        height: 12px;
+        background: #00ff99;
+    border-radius: 50%;
+    border: 2px solid #1a1a2e;
+        box-shadow: 0 0 5px rgba(0, 255, 153, 0.6);
+}
+
+.profile-name {
+    font-size: 1.1rem;
+        font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.profile-title {
+    font-size: 0.8rem;
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 300;
+}
+
+/* 4. Menu */
+.sidebar-nav {
+    flex: 1;
+    padding: 10px 15px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-item {
+    margin-bottom: 5px;
+}
+
+.menu-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 15px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 10px;
+        transition: all 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.menu-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(135deg, var(--neon-pink), var(--neon-blue));
+    transform: scaleY(0);
+    transition: transform 0.2s ease;
+}
+
+.menu-link i {
+    font-size: 1rem;
+    width: 24px;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.menu-link:hover {
+    background: rgba(0, 204, 255, 0.1);
+    color: #00ccff;
+    transform: translateX(-3px);
+}
+.menu-link:hover i {
+    color: var(--neon-pink);
+}
+
+.menu-item.active .menu-link {
+    background: linear-gradient(135deg, rgba(0, 204, 255, 0.15), rgba(255, 45, 149, 0.15));
+    color: #00ccff;
+}
+.menu-item.active .menu-link::before {
+    transform: scaleY(1);
+}
+
+/* 5. Social & Footer */
+.sidebar-social {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+        padding: 15px;
+        border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+.social-icon {
+    width: 35px;
+        height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50%;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.social-icon:hover {
+    transform: translateY(-3px);
+        background: var(--neon-blue);
+        color: white;
+}
+
+.sidebar-footer {
+    text-align: center;
+    padding: 10px;
+        font-size: 0.7rem;
+        color: rgba(255, 255, 255, 0.4);
+}
+
+/* 6. Buttons */
+.sidebar-toggle {
+    position: fixed;
+    top: 20px;
+    width: 45px;
+        height: 45px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 10001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+        right: 20px;
+        background: linear-gradient(135deg, var(--neon-pink), var(--neon-blue));
+    box-shadow: 0 4px 15px rgba(0, 204, 255, 0.4);
+}
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    width: 45px;
+        height: 45px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 10001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+        /* LEFT POSITIONED */
+        left: 20px;
+        right: auto;
+        background: linear-gradient(135deg, #ffdd00, #ff7700);
+    box-shadow: 0 4px 15px rgba(255, 221, 0, 0.4);
+}
+
+.sidebar-toggle:hover,
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* 7. Overlay */
+.sidebar-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    z-index: 9999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.sidebar-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* 8. Layout */
+.main-wrapper {
+    width: 100%;
+        margin: 0;
+    min-height: 100vh;
+}
+
+/* RTL Override */
+[dir="rtl"] .sidebar {
+    right: 0 !important;
+    left: auto !important;
+    border-right: none;
+    border-left: 1px solid rgba(0, 204, 255, 0.2);
+    transform: translateX(100%);
+}
+[dir="rtl"] .sidebar.active {
+    transform: translateX(0);
+}
+
+[dir="rtl"] .sidebar-toggle {
+    right: 20px !important;
+    left: auto !important;
+}
+
+[dir="rtl"] .theme-toggle {
+    right: auto !important;
+    left: 20px !important;
+}
+
+/* Enforce Left */
+[dir="rtl"] .menu-link {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .menu-link::before {
+    right: auto;
+    left: 0;
+}
+
+[dir="rtl"] .menu-link:hover {
+    transform: translateX(-3px);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .sidebar {
+            width: 100%;
+            max-width: 280px;
+        }
+    
+        .sidebar-toggle {
+            width: 40px;
+            height: 40px;
+            top: 15px;
+            right: 15px;
+        }
+    
+        .theme-toggle {
+            width: 40px;
+            height: 40px;
+            top: 15px;
+            left: 15px;
+            right: auto;
+        }
+    
+        [dir="rtl"] .theme-toggle {
+            left: 15px !important;
+            right: auto !important;
+        }
+    }

@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+    <head>
+        <!-- Essential Meta Tags -->
+        <meta charset="UTF-8" />
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+        <!-- Primary Meta Tags -->
+        <title>مشتاق اليعري | مطور ويب وتطبيقات متكاملة</title>
+        <meta name="title" content="مشتاق اليعري | مطور ويب وتطبيقات متكاملة" />
+        <meta name="description"
+            content="مشتاق اليعري - مطور ويب وتطبيقات متكاملة متخصص في تطوير الويب والذكاء الاصطناعي. شاهد مشاريعي وتواصل معي." />
+        <meta name="keywords"
+            content="Full-Stack Developer, Web Developer, AI Student, Python, JavaScript, PHP, Portfolio, Mushtaq AL-Yaari" />
+        <meta name="author" content="مشتاق اليعري" />
+        <meta name="robots" content="index, follow" />
+
+        <!-- Theme Color -->
+        <meta name="theme-color" content="#0f0f1e" />
+        <meta name="msapplication-TileColor" content="#0f0f1e" />
+
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800&display=swap"
+            rel="stylesheet" />
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="CSS/css/all.min.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="rtl.css" />
+        <link rel="stylesheet" href="sidebar.css" />
+        <link rel="stylesheet" href="profile-image.css" />
+        <link rel="stylesheet" href="theme.css" />
+
+        <style>
+    body, h1, h2, h3, h4, h5, h6, p, span, a, li {
+        font-family: 'Tajawal', 'Poppins', sans-serif;
+    }
+  </style>
+    </head>
+
+    <body>
+        <!-- Sidebar الاحترافي -->
+        <aside class="sidebar" id="sidebar">
+            <!-- Profile Section -->
+            <div class="sidebar-profile">
+                <div class="profile-image-wrapper">
+                    <img src="mushtag.jpg" alt="مشتاق اليعري"
+                        class="sidebar-profile-img"
+                        onerror="this.src='https://via.placeholder.com/150?text=Mushtag'" />
+                    <div class="profile-status"></div>
+                </div>
+                <h3 class="profile-name">مشتاق اليعري</h3>
+                <p class="profile-title">مطور ويب وتطبيقات متكاملة</p>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="sidebar-nav">
+                <ul class="sidebar-menu">
+                    <li class="menu-item active">
+                        <a href="#home" class="menu-link">
+                            <i class="fas fa-home"></i>
+                            <span>الرئيسية</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#about" class="menu-link">
+                            <i class="fas fa-user"></i>
+                            <span>نبذة عني</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#skills" class="menu-link">
+                            <i class="fas fa-code"></i>
+                            <span>المهارات</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#projects" class="menu-link">
+                            <i class="fas fa-folder-open"></i>
+                            <span>المشاريع</span>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#contact" class="menu-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>تواصل معي</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Social Links -->
+            <div class="sidebar-social">
+                <a href="https://wa.me/967771368813" target="_blank"
+                    class="social-icon" title="WhatsApp" rel="noopener">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:mushtagalyaari@gmail.com" class="social-icon"
+                    title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <!-- Copyright -->
+            <div class="sidebar-footer">
+                <p>&copy; 2026 مشتاق اليعري</p>
+            </div>
+        </aside>
+
+        <!-- Sidebar Toggle Button (Mobile) -->
+        <button class="sidebar-toggle" id="sidebarToggle" title="Open Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Theme Toggle Button -->
+        <button class="theme-toggle" id="themeToggle" title="Switch Theme">
+            <i class="fas fa-moon"></i>
+        </button>
+
+        <!-- Sidebar Overlay (Mobile) -->
+        <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+        <!-- Main Content Wrapper -->
+        <div class="main-wrapper">
+
+            <section class="hero" id="home">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1>مطور ويب وتطبيقات متكاملة</h1>
+                        <p>
+                            أقوم ببناء تطبيقات ويب وموبايل احترافية تجمع بين
+                            الأداء العالي
+                            والتصميم العصري، باستخدام أحدث التقنيات.
+                        </p>
+                        <div class="hero-btns">
+                            <a href="#projects" class="btn btn-primary">
+                                <i class="fas fa-rocket"></i> شاهد أعمالي
+                            </a>
+                            <a href="#contact" class="btn btn-secondary">
+                                <i class="fas fa-paper-plane"></i> تواصل معي
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="floating-elements">
+                    <div class="floating-element"></div>
+                    <div class="floating-element"></div>
+                    <div class="floating-element"></div>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>نبذة <span class="highlight">عني</span></h2>
+                        <p>تعرف أكثر على خلفيتي وخبراتي</p>
+                    </div>
+                    <div class="about-content">
+                        <div class="about-img">
+                            <div class="about-img-container">
+                                <img src="mushtag.jpg" alt="مشتاق اليعري"
+                                    class="profile-image"
+                                    onerror="this.src='https://via.placeholder.com/400x500?text=Mushtag+Photo'" />
+                            </div>
+                        </div>
+                        <div class="about-text">
+                            <h3>طالب تقنية معلومات ومطور متكامل طموح</h3>
+                            <p>
+                                أنا طالب تكنولوجيا المعلومات شغوف يبلغ من العمر
+                                20 عامًا في جامعة 21 سبتمبر، متخصص في تطوير
+                                الويب والذكاء الاصطناعي. أدمج الإبداع مع الخبرة
+                                التقنية لإنشاء تجارب رقمية احترافية ومميزة.
+                            </p>
+                            <p>
+                                أتميز في بناء حلول ويب ديناميكية باستخدام HTML,
+                                CSS, JavaScript, PHP, MySQL, Java, Angular،
+                                بالإضافة إلى مشاريع الذكاء الاصطناعي باستخدام
+                                Python و Streamlit وخدمات الـ APIs المختلفة.
+                            </p>
+                            <p>
+                                أتطلع لإحضار أفكار جديدة ومساهمة في مشاريع
+                                مبتكرة، مع الاستمرار في تطوير مهاراتي كمطور
+                                محترف.
+                            </p>
+                            <div class="about-info">
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <i class="fas fa-graduation-cap"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <h4>التعليم</h4>
+                                        <p>طالب تكنولوجيا معلومات</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <i class="fas fa-briefcase"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <h4>التخصص</h4>
+                                        <p>تطوير الويب والذكاء الاصطناعي</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <i class="fas fa-tasks"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <h4>التقنيات</h4>
+                                        <p>HTML, CSS, JS, PHP, Python, Java</p>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <div class="info-icon">
+                                        <i class="fas fa-award"></i>
+                                    </div>
+                                    <div class="info-content">
+                                        <h4>الهدف</h4>
+                                        <p>الانضمام لشركات مبتكرة وريادية</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills" id="skills">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>مهاراتي <span class="highlight">التقنية</span></h2>
+                        <p>
+                            التقنيات والأدوات التي أتقنها لبناء تطبيقات مذهلة
+                        </p>
+                    </div>
+
+                    <div class="skills-categories">
+                        <div class="category-filter">
+                            <button class="filter-btn active"
+                                data-filter="all">الكل</button>
+                            <button class="filter-btn"
+                                data-filter="frontend">الواجهة الأمامية</button>
+                            <button class="filter-btn"
+                                data-filter="backend">الخلفية</button>
+                            <button class="filter-btn" data-filter="ai">الذكاء
+                                الاصطناعي</button>
+                            <button class="filter-btn"
+                                data-filter="tools">أدوات</button>
+                        </div>
+                    </div>
+
+                    <div class="skills-grid">
+                        <!-- Frontend Skills -->
+                        <div class="skill-card" data-category="frontend">
+                            <div class="skill-icon">
+                                <img src="images/HTMLicon.png" alt="HTML"
+                                    class="skill-img" />
+                                <div class="skill-level">95%</div>
+                            </div>
+                            <h3>HTML5</h3>
+                            <p>بناء هياكل ويب دلالية ومتوافقة مع المعايير</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar"
+                                    style="width: 95%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" data-category="frontend">
+                            <div class="skill-icon">
+                                <img src="images/cssicon.png" alt="CSS"
+                                    class="skill-img" />
+                                <div class="skill-level">90%</div>
+                            </div>
+                            <h3>CSS3</h3>
+                            <p>تصميم متجاوب، أنيميشن، وتخطيطات فليكس وجريد</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar"
+                                    style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" data-category="frontend">
+                            <div class="skill-icon">
+                                <img src="images/JSiocn.png" alt="JS"
+                                    class="skill-img" />
+                                <div class="skill-level">88%</div>
+                            </div>
+                            <h3>JavaScript</h3>
+                            <p>تفاعلية متقدمة ومعالجة بيانات في المتصفح</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar"
+                                    style="width: 88%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" data-category="frontend">
+                            <div class="skill-icon">
+                                <img src="images/Angular.jpg" alt="Angular"
+                                    class="skill-img" />
+                                <div class="skill-level">82%</div>
+                            </div>
+                            <h3>Angular</h3>
+                            <p>إطار عمل متطور لبناء تطبيقات الويب الأحادية
+                                الصفحة</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar"
+                                    style="width: 82%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Backend Skills -->
+                        <div class="skill-card" data-category="backend">
+                            <div class="skill-icon">
+                                <img src="images/java.png" alt="Java"
+                                    class="skill-img" />
+                                <div class="skill-level">80%</div>
+                            </div>
+                            <h3>Java</h3>
+                            <p>تطوير تطبيقات سطح المكتب والويب باستخدام
+                                JavaFX</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar"
+                                    style="width: 80%"></div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card" data-category="backend">
+                            <div class="skill-icon">
+                                <img src="images/AspMvciconpng.png" alt="PHP"
+                                    class="skill-img" />
+                                <div class="skill-level">85%</div>
+                            </div>
+                            <h3>PHP / MySQL</h3>
+                            <p>تطوير أنظمة خلفية قوية وإدارة قواعد البيانات</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar"
+                                    style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <!-- AI Skills -->
+                        <div class="skill-card" data-category="ai">
+                            <div class="skill-icon">
+                                <img src="images/Cc.jpg" alt="Python"
+                                    class="skill-img" />
+                                <div class="skill-level">85%</div>
+                            </div>
+                            <h3>Python / AI</h3>
+                            <p>تعلم الآلة وتحليل البيانات وبناء نماذج الذكاء
+                                الاصطناعي</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar"
+                                    style="width: 85%"></div>
+                            </div>
+                        </div>
+
+                        <!-- Tools -->
+                        <div class="skill-card" data-category="tools">
+                            <div class="skill-icon">
+                                <img src="images/SystemAlicon.png"
+                                    alt="Analysis" class="skill-img" />
+                                <div class="skill-level">90%</div>
+                            </div>
+                            <h3>تحليل الأنظمة</h3>
+                            <p>تصميم المعماريات البرمجية وهياكل البيانات</p>
+                            <div class="skill-progress">
+                                <div class="progress-bar"
+                                    style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="projects" id="projects">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>مشاريعي <span class="highlight">السابقة</span></h2>
+                        <p>اطلع على أعمالي في الويب والذكاء الاصطناعي</p>
+                    </div>
+                    <div class="projects-grid">
+                        <!-- Web Projects -->
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="web_project.png"
+                                    alt="Employee Management System" />
+                                <div class="project-overlay">
+                                    <a href="https://github.com/mushtag4"
+                                        class="project-link" target="_blank"
+                                        rel="noopener"><i
+                                            class="fab fa-github"></i></a>
+                                    <a href="#" class="project-link"><i
+                                            class="fas fa-link"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-title">نظام إدارة
+                                    الموظفين</h3>
+                                <p class="project-desc">نظام متكامل لإدارة
+                                    بيانات الموظفين باستخدام PHP و MySQL.</p>
+                                <div class="project-tags"><span
+                                        class="project-tag">PHP</span><span
+                                        class="project-tag">MySQL</span></div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="web_project.png"
+                                    alt="Student Management System" />
+                                <div class="project-overlay">
+                                    <a href="https://github.com/mushtag4"
+                                        class="project-link" target="_blank"
+                                        rel="noopener"><i
+                                            class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-title">نظام إدارة الطلاب</h3>
+                                <p class="project-desc">منصة لإدارة الطلاب
+                                    والدرجات الأكاديمية والمواد الدراسية.</p>
+                                <div class="project-tags"><span
+                                        class="project-tag">PHP</span><span
+                                        class="project-tag">Bootstrap</span></div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="web_project.png"
+                                    alt="Sweet Shop Web App" />
+                                <div class="project-overlay">
+                                    <a href="https://github.com/mushtag4"
+                                        class="project-link" target="_blank"
+                                        rel="noopener"><i
+                                            class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-title">Sweet Shop Web
+                                    App</h3>
+                                <p class="project-desc">تطبيق ويب لعرض وإدارة
+                                    منتجات محل الحلويات.</p>
+                                <div class="project-tags"><span
+                                        class="project-tag">HTML/CSS</span><span
+                                        class="project-tag">JS</span></div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="web_project.png"
+                                    alt="Online Marketing Platform" />
+                                <div class="project-overlay">
+                                    <a href="https://github.com/mushtag4"
+                                        class="project-link" target="_blank"
+                                        rel="noopener"><i
+                                            class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-title">Online Marketing
+                                    Platform</h3>
+                                <p class="project-desc">منصة تسويق إلكترونية
+                                    لإدارة المنتجات والحملات.</p>
+                                <div class="project-tags"><span
+                                        class="project-tag">Web
+                                        Services</span></div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="web_project.png"
+                                    alt="Medical Laboratory System" />
+                                <div class="project-overlay">
+                                    <a href="https://github.com/mushtag4"
+                                        class="project-link" target="_blank"
+                                        rel="noopener"><i
+                                            class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-title">Medical Laboratory
+                                    System</h3>
+                                <p class="project-desc">نظام لإدارة المختبرات
+                                    الطبية وتسجيل الفحوصات.</p>
+                                <div class="project-tags"><span
+                                        class="project-tag">Java</span><span
+                                        class="project-tag">API</span></div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="web_project.png"
+                                    alt="Hotel Booking System" />
+                                <div class="project-overlay">
+                                    <a href="https://github.com/mushtag4"
+                                        class="project-link" target="_blank"
+                                        rel="noopener"><i
+                                            class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-title">Hotel Booking
+                                    System</h3>
+                                <p class="project-desc">نظام حجز غرف فندقية
+                                    متكامل مع إدارة للعملاء.</p>
+                                <div class="project-tags"><span
+                                        class="project-tag">MVC</span><span
+                                        class="project-tag">SQL</span></div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="web_project.png"
+                                    alt="Flight Booking System" />
+                                <div class="project-overlay">
+                                    <a href="https://github.com/mushtag4"
+                                        class="project-link" target="_blank"
+                                        rel="noopener"><i
+                                            class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-title">Flight Booking
+                                    System</h3>
+                                <p class="project-desc">تطبيق لحجز الرحلات
+                                    الجوية ومتابعة جدول الرحلات.</p>
+                                <div class="project-tags"><span
+                                        class="project-tag">Angular</span><span
+                                        class="project-tag">API</span></div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="web_project.png"
+                                    alt="Cafe Management System" />
+                                <div class="project-overlay">
+                                    <a href="https://github.com/mushtag4"
+                                        class="project-link" target="_blank"
+                                        rel="noopener"><i
+                                            class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-title">Cafe Management
+                                    System</h3>
+                                <p class="project-desc">نظام لإدارة طلبات
+                                    المقاهي والمخزون اليومي.</p>
+                                <div class="project-tags"><span
+                                        class="project-tag">PHP</span><span
+                                        class="project-tag">MySQL</span></div>
+                            </div>
+                        </div>
+
+                        <!-- AI Projects -->
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="ai_project.png"
+                                    alt="StudentsAI-Predictor" />
+                                <div class="project-overlay">
+                                    <a href="https://github.com/mushtag4"
+                                        class="project-link" target="_blank"
+                                        rel="noopener"><i
+                                            class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3
+                                    class="project-title">StudentsAI-Predictor</h3>
+                                <p class="project-desc">توقع أداء الطلاب
+                                    باستخدام خوارزميات تعلم الآلة.</p>
+                                <div class="project-tags"><span
+                                        class="project-tag">Python</span><span
+                                        class="project-tag">Streamlit</span></div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="ai_project.png" alt="DepressionAI" />
+                                <div class="project-overlay">
+                                    <a href="https://github.com/mushtag4"
+                                        class="project-link" target="_blank"
+                                        rel="noopener"><i
+                                            class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-title">DepressionAI</h3>
+                                <p class="project-desc">تحليل الحالة النفسية
+                                    لتقدير احتمالية الإصابة بالاكتئاب.</p>
+                                <div class="project-tags"><span
+                                        class="project-tag">AI</span><span
+                                        class="project-tag">NLP</span></div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="ai_project.png" alt="HomeEnergyAI" />
+                                <div class="project-overlay">
+                                    <a href="https://github.com/mushtag4"
+                                        class="project-link" target="_blank"
+                                        rel="noopener"><i
+                                            class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3 class="project-title">HomeEnergyAI</h3>
+                                <p class="project-desc">نظام ذكي لتوقع ونمذجة
+                                    استهلاك الطاقة المنزلي.</p>
+                                <div class="project-tags"><span
+                                        class="project-tag">ML</span><span
+                                        class="project-tag">Energy</span></div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="ai_project.png"
+                                    alt="WeatherAI-Predictor" />
+                                <div class="project-overlay">
+                                    <a href="https://github.com/mushtag4"
+                                        class="project-link" target="_blank"
+                                        rel="noopener"><i
+                                            class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3
+                                    class="project-title">WeatherAI-Predictor</h3>
+                                <p class="project-desc">توقع حالة الطقس بدقة
+                                    باستخدام البيانات التاريخية.</p>
+                                <div class="project-tags"><span
+                                        class="project-tag">Python</span><span
+                                        class="project-tag">Pandas</span></div>
+                            </div>
+                        </div>
+
+                        <div class="project-card">
+                            <div class="project-img">
+                                <img src="ai_project.png"
+                                    alt="TrafficAI-Predictor" />
+                                <div class="project-overlay">
+                                    <a href="https://github.com/mushtag4"
+                                        class="project-link" target="_blank"
+                                        rel="noopener"><i
+                                            class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3
+                                    class="project-title">TrafficAI-Predictor</h3>
+                                <p class="project-desc">توقع حالة المرور
+                                    والازدحامات في المدن الذكية.</p>
+                                <div class="project-tags"><span
+                                        class="project-tag">AI</span><span
+                                        class="project-tag">Smart
+                                        Cities</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact" id="contact">
+                <div class="container">
+                    <div class="section-title">
+                        <h2>تواصل معي</h2>
+                        <p>تواصل معي للتعاون أو للاستفسار عن خدماتي</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-header">
+                            <h3>لنتحدث!</h3>
+                            <p>أنا متاح دائماً لمناقشة المشاريع البرمجية
+                                والابتكارات الجديدة</p>
+                        </div>
+
+                        <ul class="contact-details">
+                            <li>
+                                <a
+                                    href="https://www.google.com/maps/place/Sana'a,+Yemen"
+                                    target="_blank"
+                                    style="text-decoration: none; color: inherit"
+                                    rel="noopener" title="Location">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <h4>الموقع</h4>
+                                        <p>اليمن، صنعاء</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="mailto:mushtagalyaari@gmail.com"
+                                    style="text-decoration: none; color: inherit"
+                                    title="Email">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <h4>البريد الإلكتروني</h4>
+                                        <p>mushtagalyaari@gmail.com</p>
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="tel:771368813"
+                                    style="text-decoration: none; color: inherit"
+                                    title="Phone">
+                                    <div class="contact-icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="contact-text">
+                                        <h4>الهاتف</h4>
+                                        <p>771368813</p>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="social-links">
+                            <a href="mailto:mushtagalyaari@gmail.com"
+                                class="social-link" title="Email">
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <a href="https://wa.me/967771368813"
+                                class="social-link" target="_blank"
+                                rel="noopener" title="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="container">
+                    <div class="footer-content">
+                        <div class="footer-col">
+                            <h4>عن مشتاق</h4>
+                            <p>
+                                طالب تقنية معلومات ومطور شغوف ببناء تجارب رقمية
+                                ذكية تخدم المجتمع والقطاع التقني.
+                            </p>
+                        </div>
+                        <div class="footer-col">
+                            <h4>روابط سريعة</h4>
+                            <ul class="footer-links">
+                                <li><a href="#home">الرئيسية</a></li>
+                                <li><a href="#about">نبذة عني</a></li>
+                                <li><a href="#skills">المهارات</a></li>
+                                <li><a href="#projects">المشاريع</a></li>
+                                <li><a href="#contact">تواصل معي</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col">
+                            <h4>خدماتي</h4>
+                            <ul class="footer-links">
+                                <li><a href="#">تطوير الويب</a></li>
+                                <li><a href="#">تطبيقات AI</a></li>
+                                <li><a href="#">قواعد البيانات</a></li>
+                                <li><a href="#">تحليل النظم</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2026 مشتاق اليعري. جميع الحقوق محفوظة.</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- End Main Wrapper -->
+    </body>
+    <script src="theme.js"></script>
+    <script src="sidebar.js"></script>
+    <script src="script.js"></script>
+
+</html>

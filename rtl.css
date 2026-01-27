@@ -1,0 +1,204 @@
+/* ========================================
+   RTL (Right-to-Left) Support for Arabic
+   ======================================== */
+
+/* Global RTL Styles */
+[dir="rtl"] {
+    text-align: right;
+    direction: rtl;
+}
+
+[dir="rtl"] body {
+    font-family: 'Poppins', 'Cairo', 'Tajawal', sans-serif;
+}
+
+/* Navigation RTL */
+[dir="rtl"] nav {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .nav-links {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .logo {
+    margin-left: 0;
+    margin-right: auto;
+}
+
+/* Hero Section RTL */
+[dir="rtl"] .hero-content {
+    text-align: center;
+}
+
+[dir="rtl"] .hero-btns {
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+[dir="rtl"] .btn i {
+    margin-right: 0;
+    margin-left: 10px;
+}
+
+/* About Section RTL */
+[dir="rtl"] .about-content {
+    direction: rtl;
+}
+
+[dir="rtl"] .about-text {
+    text-align: right;
+}
+
+[dir="rtl"] .info-item {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+[dir="rtl"] .info-icon {
+    margin-right: 0;
+    margin-left: 15px;
+}
+
+/* Skills Section RTL */
+[dir="rtl"] .category-filter {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .skill-card {
+    text-align: center;
+}
+
+[dir="rtl"] .skill-level {
+    right: auto;
+    left: -10px;
+}
+
+/* Projects Section RTL */
+[dir="rtl"] .project-card {
+    text-align: right;
+}
+
+[dir="rtl"] .project-tags {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+[dir="rtl"] .project-overlay {
+    flex-direction: row-reverse;
+}
+
+/* Contact Section RTL */
+[dir="rtl"] .contact-details li a {
+    flex-direction: row-reverse;
+}
+
+[dir="rtl"] .contact-icon {
+    margin-right: 0;
+    margin-left: 20px;
+}
+
+[dir="rtl"] .contact-text {
+    text-align: right;
+}
+
+[dir="rtl"] .social-links {
+    flex-direction: row-reverse;
+}
+
+/* Footer RTL */
+[dir="rtl"] .footer-content {
+    direction: rtl;
+}
+
+[dir="rtl"] .footer-col {
+    text-align: right;
+}
+
+[dir="rtl"] .footer-col h4::after {
+    left: auto;
+    right: 0;
+}
+
+[dir="rtl"] .footer-links {
+    text-align: right;
+}
+
+[dir="rtl"] .footer-links a:hover {
+    padding-left: 0;
+    padding-right: 5px;
+}
+
+/* Mobile Menu RTL */
+@media (max-width: 768px) {
+    [dir="rtl"] .nav-links {
+        right: auto;
+        left: -100%;
+        border-left: none;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 5px 0 20px rgba(0, 0, 0, 0.3);
+    }
+    
+    [dir="rtl"] .nav-links.active {
+        right: auto;
+        left: 0;
+    }
+}
+
+/* Text Alignment */
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+    text-align: center;
+}
+
+[dir="rtl"] p {
+    text-align: right;
+    line-height: 1.8;
+}
+
+[dir="rtl"] .section-title {
+    text-align: center;
+}
+
+[dir="rtl"] .section-title p {
+    text-align: center;
+}
+
+/* Buttons RTL */
+[dir="rtl"] .btn {
+    flex-direction: row-reverse;
+}
+
+/* Cards RTL */
+[dir="rtl"] .project-info,
+[dir="rtl"] .skill-card,
+[dir="rtl"] .contact-card {
+    text-align: center;
+}
+
+/* Specific Adjustments */
+[dir="rtl"] .about-img-container {
+    transform: perspective(800px) rotateY(5deg);
+}
+
+[dir="rtl"] .about-img-container:hover {
+    transform: perspective(800px) rotateY(0deg);
+}
+
+/* Filter Buttons RTL */
+[dir="rtl"] .filter-btn {
+    text-align: center;
+}
+
+/* Progress Bars - Keep LTR */
+[dir="rtl"] .skill-progress {
+    direction: ltr;
+}
+
+[dir="rtl"] .progress-bar {
+    direction: ltr;
+}

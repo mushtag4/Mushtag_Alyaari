@@ -1,0 +1,269 @@
+/* ========================================
+   Light/Dark Mode Theme Switcher
+   ======================================== */
+
+/* Light Mode Variables */
+body.light-mode {
+    --dark-bg: #f5f7fa;
+    --darker-bg: #e8ecf1;
+    --card-bg: rgba(255, 255, 255, 0.9);
+    --card-bg-hover: rgba(255, 255, 255, 1);
+    --light-text: #1a1a2e;
+    --text-secondary: rgba(26, 26, 46, 0.8);
+    --text-muted: rgba(26, 26, 46, 0.6);
+    --neon-pink: #e91e63;
+    --neon-blue: #2196f3;
+    --neon-green: #4caf50;
+    --neon-yellow: #ffc107;
+    --neon-purple: #9c27b0;
+    --neon-orange: #ff9800;
+}
+
+/* Light Mode - Body */
+body.light-mode {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    color: #1a1a2e;
+}
+
+/* Light Mode - Sidebar */
+body.light-mode .sidebar {
+    background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
+    border-left: 1px solid rgba(33, 150, 243, 0.2);
+    box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .sidebar-profile-img {
+    border: 3px solid rgba(33, 150, 243, 0.5);
+    box-shadow: 0 0 20px rgba(33, 150, 243, 0.3),
+                0 0 40px rgba(233, 30, 99, 0.2);
+}
+
+body.light-mode .profile-name {
+    color: #1a1a2e;
+}
+
+body.light-mode .profile-title {
+    color: rgba(26, 26, 46, 0.7);
+}
+
+body.light-mode .menu-link {
+    color: rgba(26, 26, 46, 0.8);
+}
+
+body.light-mode .menu-link:hover {
+    background: rgba(33, 150, 243, 0.1);
+    color: #2196f3;
+}
+
+body.light-mode .menu-item.active .menu-link {
+    background: linear-gradient(135deg, rgba(33, 150, 243, 0.15), rgba(233, 30, 99, 0.15));
+    color: #2196f3;
+    box-shadow: 0 4px 15px rgba(33, 150, 243, 0.2);
+}
+
+body.light-mode .social-icon {
+    background: rgba(26, 26, 46, 0.05);
+    color: rgba(26, 26, 46, 0.7);
+}
+
+body.light-mode .social-icon:hover {
+    box-shadow: 0 5px 20px rgba(33, 150, 243, 0.3);
+}
+
+body.light-mode .sidebar-footer {
+    color: rgba(26, 26, 46, 0.5);
+}
+
+/* Light Mode - Sections */
+body.light-mode section {
+    background: transparent;
+}
+
+body.light-mode .section-title h2 {
+    color: #1a1a2e;
+}
+
+body.light-mode .section-title p {
+    color: rgba(26, 26, 46, 0.7);
+}
+
+/* Light Mode - Cards */
+body.light-mode .skill-card,
+body.light-mode .project-card,
+body.light-mode .contact-card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(33, 150, 243, 0.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}
+
+body.light-mode .skill-card:hover,
+body.light-mode .project-card:hover {
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .skill-card h3,
+body.light-mode .project-title,
+body.light-mode .contact-card h3 {
+    color: #1a1a2e;
+}
+
+body.light-mode .skill-card p,
+body.light-mode .project-desc {
+    color: rgba(26, 26, 46, 0.7);
+}
+
+/* Light Mode - Buttons */
+body.light-mode .filter-btn {
+    background: rgba(255, 255, 255, 0.9);
+    color: #1a1a2e;
+    border: 1px solid rgba(33, 150, 243, 0.2);
+}
+
+body.light-mode .filter-btn.active,
+body.light-mode .filter-btn:hover {
+    background: linear-gradient(135deg, #2196f3, #e91e63);
+    color: white;
+}
+
+body.light-mode .btn-primary {
+    background: linear-gradient(135deg, #e91e63, #2196f3);
+}
+
+body.light-mode .btn-secondary {
+    background: transparent;
+    color: #2196f3;
+    border: 2px solid #2196f3;
+}
+
+body.light-mode .btn-secondary:hover {
+    background: rgba(33, 150, 243, 0.1);
+}
+
+/* Light Mode - Hero Section */
+body.light-mode .hero {
+    background: transparent;
+}
+
+body.light-mode .hero h1 {
+    background: linear-gradient(135deg, #e91e63, #2196f3, #4caf50, #ffc107);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+body.light-mode .hero p {
+    color: rgba(26, 26, 46, 0.8);
+}
+
+/* Light Mode - About Section */
+body.light-mode .about-img-container {
+    border: 3px solid rgba(33, 150, 243, 0.3);
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .info-item {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(33, 150, 243, 0.1);
+}
+
+body.light-mode .info-item:hover {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .info-icon {
+    background: linear-gradient(135deg, #2196f3, #e91e63);
+}
+
+body.light-mode .info-content h4 {
+    color: #1a1a2e;
+}
+
+body.light-mode .info-content p {
+    color: rgba(26, 26, 46, 0.7);
+}
+
+/* Light Mode - Footer */
+body.light-mode footer {
+    background: linear-gradient(135deg, #ffffff 0%, #f0f4f8 100%);
+    border-top: 1px solid rgba(33, 150, 243, 0.2);
+}
+
+body.light-mode footer h4 {
+    color: #1a1a2e;
+}
+
+body.light-mode .footer-links a {
+    color: rgba(26, 26, 46, 0.7);
+}
+
+body.light-mode .footer-links a:hover {
+    color: #2196f3;
+}
+
+body.light-mode .footer-bottom p {
+    color: rgba(26, 26, 46, 0.6);
+}
+
+/* Light Mode - Contact Details */
+body.light-mode .contact-details li a {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(33, 150, 243, 0.1);
+}
+
+body.light-mode .contact-details li a:hover {
+    background: rgba(255, 255, 255, 1);
+    border-color: rgba(33, 150, 243, 0.3);
+}
+
+body.light-mode .contact-icon {
+    background: linear-gradient(135deg, #2196f3, #e91e63);
+}
+
+body.light-mode .contact-text h4 {
+    color: #1a1a2e;
+}
+
+body.light-mode .contact-text p {
+    color: rgba(26, 26, 46, 0.7);
+}
+
+/* Light Mode - Social Links */
+body.light-mode .social-link {
+    background: linear-gradient(135deg, #2196f3, #e91e63);
+}
+
+/* Light Mode - Project Tags */
+body.light-mode .project-tag {
+    background: rgba(33, 150, 243, 0.1);
+    color: #2196f3;
+}
+
+/* Light Mode - Progress Bars */
+body.light-mode .progress-bar {
+    background: linear-gradient(90deg, #e91e63, #2196f3);
+}
+
+/* Light Mode - Overlay */
+body.light-mode .sidebar-overlay {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+/* Light Mode - Floating Elements */
+body.light-mode .floating-element {
+    opacity: 0.3;
+}
+
+/* Theme Toggle Icon Change */
+body.light-mode .theme-toggle i::before {
+    content: "\f185"; /* fa-sun */
+}
+
+/* Smooth Transition for Theme Change */
+body {
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
