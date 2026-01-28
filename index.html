@@ -36,6 +36,8 @@
         <link rel="stylesheet" href="profile-image.css" />
         <link rel="stylesheet" href="theme.css" />
 
+        <!-- Preload main profile image so it appears immediately -->
+        <link rel="preload" as="image" href="mushtag1.jpg" />
         <style>
     body, h1, h2, h3, h4, h5, h6, p, span, a, li {
         font-family: 'Tajawal', 'Poppins', sans-serif;
@@ -55,7 +57,7 @@
                     <div class="profile-status"></div>
                 </div>
                 <h3 class="profile-name">مشتاق اليعري</h3>
-                <p class="profile-title">مطور ويب  متكاملة</p>
+                <p class="profile-title">مطور ويب متكاملة</p>
             </div>
 
             <!-- Navigation Menu -->
@@ -129,9 +131,9 @@
             <section class="hero" id="home">
                 <div class="container">
                     <div class="hero-content">
-                        <h1>مطور ويب  متكاملة</h1>
+                        <h1>مطور ويب متكاملة</h1>
                         <p>
-                            أقوم ببناء تطبيقات ويب  احترافية تجمع بين
+                            أقوم ببناء تطبيقات ويب احترافية تجمع بين
                             الأداء العالي
                             والتصميم العصري، باستخدام أحدث التقنيات.
                         </p>
@@ -163,6 +165,8 @@
                             <div class="about-img-container">
                                 <img src="mushtag1.jpg" alt="مشتاق اليعري"
                                     class="profile-image"
+                                    loading="eager"
+                                    width="400" height="500"
                                     onerror="this.src='https://via.placeholder.com/400x500?text=Mushtag+Photo'" />
                             </div>
                         </div>
@@ -201,7 +205,7 @@
                                     </div>
                                     <div class="info-content">
                                         <h4>التخصص</h4>
-                                        <p>مطور ويب  </p>
+                                        <p>مطور ويب </p>
                                     </div>
                                 </div>
                                 <div class="info-item">
